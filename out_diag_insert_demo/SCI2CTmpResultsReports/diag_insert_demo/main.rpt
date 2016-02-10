@@ -1,0 +1,933 @@
+***Get default precision from: /home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/diag_insert_demo/diag_insert_demo_copy.sci
+Annotation for default precision not found.
+Using the "DOUBLE" default precision.
+***Get resize approach from: /home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/diag_insert_demo/diag_insert_demo_copy.sci
+Annotation for resize approach not found.
+Using the 'NO_RESIZE' resize approach.
+ 
+***Putting Input and Output arguments in the local symbol table***
+ 
+***Generating C code***
+   C call after output scalar args check: int main(
+   C call after input args analysis: int main(
+   C call after output args analysis: int main(
+   int main()
+   {
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code:      ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code:       a  = [1]; ###
+########################################################################################
+########################################################################################
+ 
+***Reading Equal Rhs Names***
+         ==> Handling Funcall/Operation/Equal
+***Retrieving Equal Parameters from AST***
+ 
+***Reading AST***
+Function Name: OpEqual
+N Intput Arguments: 1
+N Output Arguments: 1
+Input Argument Number 1: 1
+   Scope: Number_x
+Output Argument Number 1: a
+   Scope: Variable
+***Search for Equal Lhs and precision specifier to be applied to the current function.***
+...Equal not found.
+ 
+***Analyzing Input Arguments***
+Input Argument 1 is a number: 1.
+   Type:      d
+   Size(1):   1
+   Size(2):   1
+   Value:     1
+   FindLike:  0
+   Dimension: 0
+   Scope:     Number
+   Generating Out Arg names.
+Generating temporary variables.
+ 
+***Getting output arguments info from the symbol table***
+   Symbol "a"
+   ...not found in: /home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/diag_insert_demo/main_TMPVAR.dat.
+   ...not found in: /home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/diag_insert_demo/main_LOCVAR.dat.
+   ...not found in: /home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/GBLVAR.dat.
+   Type:      d
+   Size(1):   1
+   Size(2):   1
+   Value:     1
+   FindLike:  0
+   Dimension: 0
+   Scope:     Local
+ 
+ 
+***Checking if the current function is handling for counter variables.***
+ 
+***Checking if the current function is handling while counter variables.***
+ 
+***Putting output arguments in the symbol table***
+   Symbol "a"
+   Type:      d
+   Size(1):   1
+   Size(2):   1
+   Value:     1
+   FindLike:  0
+   Dimension: 0
+   Scope:     Local
+ 
+   Setting symbol "a" in /home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/diag_insert_demo/main_LOCVAR.dat.
+ 
+***Generating C declaration***
+   double a = 1;
+   Writing C declaration in: /home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/diag_insert_demo/main_declarations.c
+ 
+***Allocating memory for temp variables***
+   C Function Name: d0OpEquald0
+ 
+***Updating C Function List***
+   C Function Name: d0OpEquald0
+   Found C Function Name in : /home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/FunctionList/SCI2CAvailableC.dat
+ 
+***Generating C code***
+   C call after output scalar args check: a = d0OpEquald0(
+   C call after input args analysis: a = d0OpEquald0(1,
+   C call after output args analysis: a = d0OpEquald0(1,
+   a = d0OpEquald0(1);
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code:       ans_a = diag(a,-4); ###
+########################################################################################
+########################################################################################
+         ==> Handling Funcall/Operation/Equal
+***Retrieving Operation Parameters from AST***
+ 
+***Reading AST***
+Operation Name: OpMinus
+N Intput Arguments: 1
+N Output Arguments: 1
+Input Argument Number 1: 4
+   Scope: Number_x
+ 
+***Reading function annotations***
+   Function belongs to class: OpMinus.
+   Line 1 - Function NInArg Annotation:  "NIN=          1 "
+   Line 2 - Function NOutArg Annotation:  "NOUT=         1 "
+   Line 3 - Function Type Annotation:  "OUT(1).TP=    IN(1).TP "
+   Line 4 - Function Size Annotation:  "OUT(1).TP=    IN(1).TP "
+   Line 5 - Function Size Annotation:  "OUT(1).SZ(1)= IN(1).SZ(1) "
+   Line 6 - Function Size Annotation:  "OUT(1).SZ(2)= IN(1).SZ(2) "
+***Search for Equal Lhs and precision specifier to be applied to the current function.***
+ 
+   Checking presence of Equal after the current function...
+...Equal not found.
+ 
+***Analyzing Input Arguments***
+Input Argument 1 is a number: 4.
+   Type:      d
+   Size(1):   1
+   Size(2):   1
+   Value:     4
+   FindLike:  0
+   Dimension: 0
+   Scope:     Number
+   Pushing in the AST stack: "Number_d: -4".
+ 
+***Checking if the current function is handling for counter variables.***
+ 
+***Checking if the current function is handling while counter variables.***
+   C Function Name: d0OpMinusd0
+ 
+***Updating C Function List***
+   C Function Name: d0OpMinusd0
+   Current function will not be inserted in the Function List.
+ 
+***Generating C code***
+         ==> Handling Funcall/Operation/Equal
+***Retrieving Funcall Parameters from AST***
+   Parsing Funcall structure
+Function Name: diag
+N Intput Arguments: 2
+N Output Arguments: 1
+Input Argument Number 1: a
+   Scope: Variable
+Input Argument Number 2: -4
+   Scope: Number_d
+ 
+***Reading function annotations***
+   Function belongs to class: diag.
+   Line 6 - Function NInArg Annotation:  "NIN=          2 "
+   Line 7 - Function NOutArg Annotation:  "NOUT=         1 "
+   Line 8 - Function Type Annotation:  "OUT(1).TP=    IN(1).TP "
+   Line 9 - Function Size Annotation:  "OUT(1).TP=    IN(1).TP "
+   Line 10 - Function Size Annotation:  "OUT(1).SZ(1)= FA_SZ_ROW_DIAG_INS_EXT(IN(1).SZ,IN(2).VAL) "
+   Line 11 - Function Size Annotation:  "OUT(1).SZ(2)= FA_SZ_COL_DIAG_IN_EX(IN(1).SZ,IN(2).VAL) "
+***Search for Equal Lhs and precision specifier to be applied to the current function.***
+ 
+   Checking presence of Equal after the current function...
+...Found Equal.
+OutArg Names will be replaced with Lhs Names of the Equal.
+ 
+***Analyzing Input Arguments***
+Input Argument 1 is a symbol: a.
+Searching "a" in /home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/diag_insert_demo/main_TMPVAR.dat.
+Searching "a" in /home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/diag_insert_demo/main_LOCVAR.dat.
+...Found in: "/home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/diag_insert_demo/main_LOCVAR.dat.
+   Type:      d
+   Size(1):   1
+   Size(2):   1
+   Value:     1
+   FindLike:  0
+   Dimension: 0
+   Scope:     Local
+Input Argument 2 is a number: -4.
+   Type:      d
+   Size(1):   1
+   Size(2):   1
+   Value:     -4
+   FindLike:  0
+   Dimension: 0
+   Scope:     Number
+   Generating Out Arg names.
+Using Equal Lhs names.
+   Pushing in the AST stack: "Variable: ans_a".
+ 
+***Getting output arguments info from the symbol table***
+   Symbol "ans_a"
+   ...not found in: /home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/diag_insert_demo/main_TMPVAR.dat.
+   ...not found in: /home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/diag_insert_demo/main_LOCVAR.dat.
+   ...not found in: /home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/GBLVAR.dat.
+   Type:      d
+   Size(1):   5
+   Size(2):   5
+   Value:     Nan
+   FindLike:  0
+   Dimension: 2
+   Scope:     Local
+ 
+ 
+***Checking if the current function is handling for counter variables.***
+ 
+***Checking if the current function is handling while counter variables.***
+ 
+***Putting output arguments in the symbol table***
+   Symbol "ans_a"
+   Type:      d
+   Size(1):   5
+   Size(2):   5
+   Value:     Nan
+   FindLike:  0
+   Dimension: 2
+   Scope:     Local
+ 
+   Setting symbol "ans_a" in /home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/diag_insert_demo/main_LOCVAR.dat.
+ 
+***Generating C declaration***
+   double ans_a[5 * 5];
+   int __ans_aSize[2] = {5, 5};;
+   Writing C declaration in: /home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/diag_insert_demo/main_declarations.c
+ 
+***Allocating memory for temp variables***
+   C Function Name: d0d0diagd2
+ 
+***Updating C Function List***
+   C Function Name: d0d0diagd2
+   Found C Function Name in : /home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/FunctionList/SCI2CAvailableC.dat
+ 
+***Generating C code***
+   C call after output scalar args check: d0d0diagd2(
+   C call after input args analysis: d0d0diagd2(a,-4,
+   C call after output args analysis: d0d0diagd2(a,-4,ans_a,
+   d0d0diagd2(a,-4,ans_a);
+ 
+***Reading Equal Rhs Names***
+         ==> Handling Funcall/Operation/Equal
+***Retrieving Equal Parameters from AST***
+ 
+***Reading AST***
+Function Name: OpEqual
+N Intput Arguments: 1
+N Output Arguments: 1
+Input Argument Number 1: ans_a
+   Scope: Variable
+Output Argument Number 1: ans_a
+   Scope: Variable
+***Search for Equal Lhs and precision specifier to be applied to the current function.***
+...Equal not found.
+ 
+***Analyzing Input Arguments***
+Input Argument 1 is a symbol: ans_a.
+Searching "ans_a" in /home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/diag_insert_demo/main_TMPVAR.dat.
+Searching "ans_a" in /home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/diag_insert_demo/main_LOCVAR.dat.
+...Found in: "/home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/diag_insert_demo/main_LOCVAR.dat.
+   Type:      d
+   Size(1):   5
+   Size(2):   5
+   Value:     Nan
+   FindLike:  0
+   Dimension: 2
+   Scope:     Local
+   Generating Out Arg names.
+Generating temporary variables.
+ 
+***Getting output arguments info from the symbol table***
+   Symbol "ans_a"
+   ...not found in: /home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/diag_insert_demo/main_TMPVAR.dat.
+   ...found in: /home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/diag_insert_demo/main_LOCVAR.dat.
+   Type:      d
+   Size(1):   5
+   Size(2):   5
+   Value:     Nan
+   FindLike:  0
+   Dimension: 2
+   Scope:     Local
+ 
+ 
+***Checking if the current function is handling for counter variables.***
+ 
+***Checking if the current function is handling while counter variables.***
+ 
+***Putting output arguments in the symbol table***
+   Symbol "ans_a"
+   Type:      d
+   Size(1):   5
+   Size(2):   5
+   Value:     Nan
+   FindLike:  0
+   Dimension: 2
+   Scope:     Local
+ 
+   Setting symbol "ans_a" in /home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/diag_insert_demo/main_LOCVAR.dat.
+   C Function Name: d2OpEquald2
+ 
+***Updating C Function List***
+   C Function Name: d2OpEquald2
+   Current function will not be inserted in the Function List.
+ 
+***Generating C code***
+   Skipping code generating because already generated in the previous function.
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code:       disp(ans_a); ###
+########################################################################################
+########################################################################################
+         ==> Handling Funcall/Operation/Equal
+***Retrieving Funcall Parameters from AST***
+   Parsing Funcall structure
+Function Name: disp
+N Intput Arguments: 1
+N Output Arguments: 1
+Input Argument Number 1: ans_a
+   Scope: Variable
+ 
+***Reading function annotations***
+   Function belongs to class: Disp.
+   Line 1 - Function NInArg Annotation:  "NIN=          1 "
+   Line 2 - Function NOutArg Annotation:  "NOUT=         1 "
+   Line 3 - Function Type Annotation:  "OUT(1).TP=    'd' "
+   Line 4 - Function Size Annotation:  "OUT(1).TP=    'd' "
+   Line 5 - Function Size Annotation:  "OUT(1).SZ(1)= '1' "
+   Line 6 - Function Size Annotation:  "OUT(1).SZ(2)= '1' "
+***Search for Equal Lhs and precision specifier to be applied to the current function.***
+ 
+   Checking presence of Equal after the current function...
+...Found Equal.
+OutArg Names will be replaced with Lhs Names of the Equal.
+ 
+***Analyzing Input Arguments***
+Input Argument 1 is a symbol: ans_a.
+Searching "ans_a" in /home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/diag_insert_demo/main_TMPVAR.dat.
+Searching "ans_a" in /home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/diag_insert_demo/main_LOCVAR.dat.
+...Found in: "/home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/diag_insert_demo/main_LOCVAR.dat.
+   Type:      d
+   Size(1):   5
+   Size(2):   5
+   Value:     Nan
+   FindLike:  0
+   Dimension: 2
+   Scope:     Local
+   Generating Out Arg names.
+Using Equal Lhs names.
+   Pushing in the AST stack: "Variable: ans1".
+ 
+***Getting output arguments info from the symbol table***
+   Symbol "ans1"
+   ...not found in: /home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/diag_insert_demo/main_TMPVAR.dat.
+   ...not found in: /home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/diag_insert_demo/main_LOCVAR.dat.
+   ...not found in: /home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/GBLVAR.dat.
+   Type:      d
+   Size(1):   1
+   Size(2):   1
+   Value:     Nan
+   FindLike:  0
+   Dimension: 0
+   Scope:     Local
+ 
+ 
+***Checking if the current function is handling for counter variables.***
+ 
+***Checking if the current function is handling while counter variables.***
+ 
+***Putting output arguments in the symbol table***
+   Symbol "ans1"
+   Type:      d
+   Size(1):   1
+   Size(2):   1
+   Value:     Nan
+   FindLike:  0
+   Dimension: 0
+   Scope:     Local
+ 
+   Setting symbol "ans1" in /home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/diag_insert_demo/main_LOCVAR.dat.
+ 
+***Generating C declaration***
+   double ans1;
+   Writing C declaration in: /home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/diag_insert_demo/main_declarations.c
+ 
+***Allocating memory for temp variables***
+   C Function Name: d2dispd0
+ 
+***Updating C Function List***
+   C Function Name: d2dispd0
+   Found C Function Name in : /home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/FunctionList/SCI2CAvailableC.dat
+ 
+***Generating C code***
+   C call after output scalar args check: ans1 = d2dispd0(
+   C call after input args analysis: ans1 = d2dispd0(ans_a,  __ans_aSize,
+   C call after output args analysis: ans1 = d2dispd0(ans_a,  __ans_aSize,
+   ans1 = d2dispd0(ans_a,  __ans_aSize);
+ 
+***Reading Equal Rhs Names***
+         ==> Handling Funcall/Operation/Equal
+***Retrieving Equal Parameters from AST***
+ 
+***Reading AST***
+Function Name: OpEqual
+N Intput Arguments: 1
+N Output Arguments: 1
+Input Argument Number 1: ans1
+   Scope: Variable
+Output Argument Number 1: ans1
+   Scope: Variable
+***Search for Equal Lhs and precision specifier to be applied to the current function.***
+...Equal not found.
+ 
+***Analyzing Input Arguments***
+Input Argument 1 is a symbol: ans1.
+Searching "ans1" in /home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/diag_insert_demo/main_TMPVAR.dat.
+Searching "ans1" in /home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/diag_insert_demo/main_LOCVAR.dat.
+...Found in: "/home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/diag_insert_demo/main_LOCVAR.dat.
+   Type:      d
+   Size(1):   1
+   Size(2):   1
+   Value:     Nan
+   FindLike:  0
+   Dimension: 0
+   Scope:     Local
+   Generating Out Arg names.
+Generating temporary variables.
+ 
+***Getting output arguments info from the symbol table***
+   Symbol "ans1"
+   ...not found in: /home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/diag_insert_demo/main_TMPVAR.dat.
+   ...found in: /home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/diag_insert_demo/main_LOCVAR.dat.
+   Type:      d
+   Size(1):   1
+   Size(2):   1
+   Value:     Nan
+   FindLike:  0
+   Dimension: 0
+   Scope:     Local
+ 
+ 
+***Checking if the current function is handling for counter variables.***
+ 
+***Checking if the current function is handling while counter variables.***
+ 
+***Putting output arguments in the symbol table***
+   Symbol "ans1"
+   Type:      d
+   Size(1):   1
+   Size(2):   1
+   Value:     Nan
+   FindLike:  0
+   Dimension: 0
+   Scope:     Local
+ 
+   Setting symbol "ans1" in /home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/diag_insert_demo/main_LOCVAR.dat.
+   C Function Name: d0OpEquald0
+ 
+***Updating C Function List***
+   C Function Name: d0OpEquald0
+   Current function will not be inserted in the Function List.
+ 
+***Generating C code***
+   Skipping code generating because already generated in the previous function.
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code:    /////////////For R == 1 //////////// ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    disp("========== (For R == 1) =========="); ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    a = [1 2 3 4]; ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    disp("Insert at 0th position without parameter") ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    a_no0 = diag(a); ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    disp(a_no0); ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    disp("Insert at 0th position with parameter") ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    a_0 = diag(a,0); ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    disp(a_0); ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    disp("Insert at 1st position with parameter") ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    a_1 = diag(a,2); ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    disp(a_1); ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    disp("Insert at 2nd position with parameter") ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    a_2 = diag(a,2); ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    disp(a_2); ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    disp("Insert at -1st position with parameter") ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    a_neg1 = diag(a,-1); ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    disp(a_neg1); ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    disp("Insert at -2nd position with parameter") ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    a_neg2 = diag(a,-2); ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    disp(a_neg2); ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //  ///////////////////////////////////////////////  ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //   ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //   ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //  /////////////For C == 1 //////////// ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    disp("========(For C ==1)================"); ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    b = [1; 2; 3; 4]; ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    disp("Insert at 0th position without parameter") ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    b_no0 = diag(b); ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    disp(b_no0); ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    disp("Insert at 0th position with parameter") ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    b_0 = diag(b,0); ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    disp(b_0); ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    disp("Insert at 1st position with parameter") ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    b_1 = diag(b,1); ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    disp(b_1); ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    disp("Insert at 2nd position with parameter") ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    b_2 = diag(b,2); ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    disp(b_2); ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    disp("Insert at -1st position with parameter") ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    b_neg1 = diag(b,-1); ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    disp(b_neg1); ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    disp("Insert at -2nd position with parameter") ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    b_neg2 = diag(b,-2); ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: //    disp(b_neg2); ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code:      ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code:      ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code:      ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code:  ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code:  ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code:  ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code:  ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code:  ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code:  ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code: endfunction ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code:  ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code:  ###
+########################################################################################
+########################################################################################
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code:  ###
+########################################################################################
+########################################################################################
+         ==> Handling Funcall/Operation/Equal
+***Retrieving Funcall Parameters from AST***
+   Parsing Funcall structure
+Function Name: return
+N Intput Arguments: 0
+N Output Arguments: 0
+ 
+***Reading function annotations***
+   Function belongs to class: Return.
+   Line 1 - Function NInArg Annotation:  "NIN=          0 "
+   Line 2 - Function NOutArg Annotation:  "NOUT=         0 "
+***Search for Equal Lhs and precision specifier to be applied to the current function.***
+ 
+   Checking presence of Equal after the current function...
+...Equal not found.
+ 
+***Analyzing Input Arguments***
+   Generating Out Arg names.
+Generating temporary variables.
+ 
+***Getting output arguments info from the symbol table***
+ 
+***Checking if the current function is handling for counter variables.***
+ 
+***Checking if the current function is handling while counter variables.***
+ 
+***Putting output arguments in the symbol table***
+   C Function Name: return
+ 
+***Updating C Function List***
+   C Function Name: return
+   Found C Function Name in : /home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/FunctionList/SCI2CAvailableC.dat
+ 
+***Generating C code***
+   C call after output scalar args check: return(
+   C call after input args analysis: return(
+   C call after output args analysis: return(
+   return function of the AST is skipped.
+   return(0);
+         ==> Handling EOL
+ 
+########################################################################################
+########################################################################################
+### Scilab code:  ###
+########################################################################################
+########################################################################################
+         ==> Handling EndProgram
+   }
+   Closing: /home/mushirahmed/scilab_workspace/out_diag_insert_demo/SCI2CTmpResultsReports/diag_insert_demo/diag_insert_demo_copy.sci
+         ==> Joining declaration and C-call files
+Generating the final C code in:/home/mushirahmed/scilab_workspace/out_diag_insert_demo/main.c

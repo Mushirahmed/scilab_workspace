@@ -1,0 +1,148 @@
+Program
+Name   : diag_insert_demo
+Outputs: <empty>
+Inputs : <empty>
+Statements 
+    <EOL>
+    <EOL>
+    Equal
+      Expression: 
+        Number_x: 1
+      Lhs       : 
+         Variable: a
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : diag
+          #lhs   : 1
+          Rhs    : 
+              Variable: a
+              Operation
+                 Operands:
+                    Number_x: 4
+                 Operator: -
+              EndOperation
+        EndFuncall
+      Lhs       : 
+         Variable: ans_a
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              Variable: ans_a
+        EndFuncall
+      Lhs       : 
+         Variable: ans1
+    EndEqual
+    <EOL>
+    Comment : ///////////For R == 1 ////////////
+    <EOL>
+    Comment :     disp("========== (For R == 1) ==========");
+    <EOL>
+    Comment :     a = [1 2 3 4];
+    <EOL>
+    Comment :     disp("Insert at 0th position without parameter")
+    <EOL>
+    Comment :     a_no0 = diag(a);
+    <EOL>
+    Comment :     disp(a_no0);
+    <EOL>
+    Comment :     disp("Insert at 0th position with parameter")
+    <EOL>
+    Comment :     a_0 = diag(a,0);
+    <EOL>
+    Comment :     disp(a_0);
+    <EOL>
+    Comment :     disp("Insert at 1st position with parameter")
+    <EOL>
+    Comment :     a_1 = diag(a,2);
+    <EOL>
+    Comment :     disp(a_1);
+    <EOL>
+    Comment :     disp("Insert at 2nd position with parameter")
+    <EOL>
+    Comment :     a_2 = diag(a,2);
+    <EOL>
+    Comment :     disp(a_2);
+    <EOL>
+    Comment :     disp("Insert at -1st position with parameter")
+    <EOL>
+    Comment :     a_neg1 = diag(a,-1);
+    <EOL>
+    Comment :     disp(a_neg1);
+    <EOL>
+    Comment :     disp("Insert at -2nd position with parameter")
+    <EOL>
+    Comment :     a_neg2 = diag(a,-2);
+    <EOL>
+    Comment :     disp(a_neg2);
+    <EOL>
+    Comment :   ///////////////////////////////////////////////
+    <EOL>
+    Comment : 
+    <EOL>
+    Comment : 
+    <EOL>
+    Comment :   /////////////For C == 1 ////////////
+    <EOL>
+    Comment :     disp("========(For C ==1)================");
+    <EOL>
+    Comment :     b = [1; 2; 3; 4];
+    <EOL>
+    Comment :     disp("Insert at 0th position without parameter")
+    <EOL>
+    Comment :     b_no0 = diag(b);
+    <EOL>
+    Comment :     disp(b_no0);
+    <EOL>
+    Comment :     disp("Insert at 0th position with parameter")
+    <EOL>
+    Comment :     b_0 = diag(b,0);
+    <EOL>
+    Comment :     disp(b_0);
+    <EOL>
+    Comment :     disp("Insert at 1st position with parameter")
+    <EOL>
+    Comment :     b_1 = diag(b,1);
+    <EOL>
+    Comment :     disp(b_1);
+    <EOL>
+    Comment :     disp("Insert at 2nd position with parameter")
+    <EOL>
+    Comment :     b_2 = diag(b,2);
+    <EOL>
+    Comment :     disp(b_2);
+    <EOL>
+    Comment :     disp("Insert at -1st position with parameter")
+    <EOL>
+    Comment :     b_neg1 = diag(b,-1);
+    <EOL>
+    Comment :     disp(b_neg1);
+    <EOL>
+    Comment :     disp("Insert at -2nd position with parameter")
+    <EOL>
+    Comment :     b_neg2 = diag(b,-2);
+    <EOL>
+    Comment :     disp(b_neg2);
+    <EOL>
+    <EOL>
+    <EOL>
+    <EOL>
+    <EOL>
+    <EOL>
+    <EOL>
+    <EOL>
+    <EOL>
+    <EOL>
+    <EOL>
+    Funcall  : return
+      #lhs   : 0
+      Rhs    : 
+          <empty>
+    EndFuncall
+    <EOL>
+EndProgram

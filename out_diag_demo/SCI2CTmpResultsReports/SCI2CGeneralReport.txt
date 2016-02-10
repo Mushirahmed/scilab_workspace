@@ -1,0 +1,359 @@
+         ==> SCI2C hArtes/POLIBA Tool!!!
+         ==> Initialize SCI2C and USER2C Libraries.
+   Adding Class: Global.
+      Adding Function: global.
+   Adding Class: Float.
+      Adding Function: float.
+   Adding Class: Double.
+      Adding Function: double.
+   Adding Class: FloatComplex.
+      Adding Function: floatcomplex.
+   Adding Class: DoubleComplex.
+      Adding Function: doublecomplex.
+   Adding Class: Uint8.
+      Adding Function: uint8.
+   Adding Class: Int8.
+      Adding Function: int8.
+   Adding Class: Uint16.
+      Adding Function: uint16.
+   Adding Class: Int16.
+      Adding Function: int16.
+   Adding Class: Sin.
+      Adding Function: sin.
+      Adding Function: sinh.
+      Adding Function: asinh.
+      Adding Function: cos.
+      Adding Function: cosh.
+      Adding Function: tan.
+      Adding Function: tanh.
+      Adding Function: exp.
+      Adding Function: conj.
+      Adding Function: inv.
+      Adding Function: int.
+      Adding Function: SCI2Cresize.
+      Adding Function: chol.
+   Adding Class: OpLogNot.
+      Adding Function: OpLogNot.
+      Adding Function: ceil.
+      Adding Function: fix.
+      Adding Function: floor.
+      Adding Function: round.
+   Adding Class: bitand.
+      Adding Function: bitand.
+      Adding Function: bitor.
+      Adding Function: bitxor.
+   Adding Class: bitcmp.
+      Adding Function: bitcmp.
+   Adding Class: bitset.
+      Adding Function: bitset.
+   Adding Class: bitget.
+      Adding Function: bitget.
+   Adding Class: Sign.
+   Adding Class: Atan.
+      Adding Function: atan.
+   Adding Class: Sqrt.
+      Adding Function: asin.
+      Adding Function: acos.
+      Adding Function: acosh.
+      Adding Function: atanh.
+      Adding Function: sqrt.
+      Adding Function: log.
+      Adding Function: log10.
+      Adding Function: log1p.
+   Adding Class: Zeros.
+      Adding Function: zeros.
+      Adding Function: ones.
+      Adding Function: eye.
+   Adding Class: diag.
+      Adding Function: diag.
+   Adding Class: rand.
+      Adding Function: rand.
+   Adding Class: Sum.
+      Adding Function: sum.
+      Adding Function: prod.
+      Adding Function: mean.
+      Adding Function: st_deviation.
+      Adding Function: variance.
+   Adding Class: Max.
+      Adding Function: max.
+      Adding Function: min.
+   Adding Class: Abs.
+      Adding Function: abs.
+      Adding Function: real.
+      Adding Function: imag.
+   Adding Class: OpDotStar.
+      Adding Function: OpDotStar.
+      Adding Function: OpDotSlash.
+   Adding Class: OpDotHat.
+      Adding Function: OpDotHat.
+      Adding Function: OpHat.
+      Adding Function: OpDotBackSlash.
+      Adding Function: OpLogLt.
+      Adding Function: OpLogLe.
+      Adding Function: OpLogGt.
+      Adding Function: OpLogGe.
+   Adding Class: OpLogEq.
+      Adding Function: OpLogEq.
+      Adding Function: OpLogNe.
+      Adding Function: OpLogAnd.
+      Adding Function: OpLogOr.
+   Adding Class: OpStar.
+      Adding Function: OpStar.
+   Adding Class: OpSlash.
+      Adding Function: OpSlash.
+   Adding Class: OpApex.
+      Adding Function: OpApex.
+      Adding Function: OpDotApex.
+   Adding Class: IsNan.
+      Adding Function: isnan.
+   Adding Class: OpPlus.
+      Adding Function: OpPlus.
+   Adding Class: OpMinus.
+      Adding Function: OpMinus.
+   Adding Class: OpRc.
+      Adding Function: OpRc.
+   Adding Class: OpCc.
+      Adding Function: OpCc.
+   Adding Class: cat.
+      Adding Function: cat.
+   Adding Class: Find.
+      Adding Function: find.
+   Adding Class: Length.
+      Adding Function: length.
+      Adding Function: type.
+   Adding Class: Size.
+      Adding Function: size.
+   Adding Class: Return.
+      Adding Function: return.
+   Adding Class: OpColon.
+      Adding Function: OpColon.
+   Adding Class: IsEmpty.
+      Adding Function: isempty.
+   Adding Class: Trace.
+      Adding Function: trace.
+      Adding Function: det.
+   Adding Class: OpIns.
+      Adding Function: OpIns.
+   Adding Class: OpExt.
+      Adding Function: OpExt.
+   Adding Class: Disp.
+      Adding Function: disp.
+   Adding Class: String.
+      Adding Function: string.
+   Adding Class: OpEqual.
+      Adding Function: OpEqual.
+   Adding Class: Mopen.
+      Adding Function: mopen.
+   Adding Class: Mput.
+      Adding Function: mput.
+   Adding Class: Mget.
+      Adding Function: mget.
+   Adding Class: Mclose.
+      Adding Function: mclose.
+   Adding Class: Mseek.
+      Adding Function: mseek.
+   Adding Class: Convol.
+      Adding Function: convol.
+   Adding Class: IFFT.
+      Adding Function: ifft.
+   Adding Class: FFT.
+      Adding Function: fft.
+   Adding Class: FFTShift.
+      Adding Function: fftshift.
+   Adding Class: Meanf.
+      Adding Function: meanf.
+      Adding Function: variancef.
+      Adding Function: stdevf.
+   Adding Class: Frmag.
+      Adding Function: frmag.
+   Adding Class: Lev.
+      Adding Function: lev.
+   Adding Class: OpBackSlash.
+      Adding Function: OpBackSlash.
+   Adding Class: Cepstrum.
+      Adding Function: Cepstrum.
+   Adding Class: Spec.
+      Adding Function: spec.
+   Adding Class: Part.
+      Adding Function: part.
+   Adding Class: Strindex.
+      Adding Function: strindex.
+   Adding Class: StrSubSt.
+      Adding Function: strsubst.
+   Adding Class: Expm.
+      Adding Function: expm.
+   Adding Class: cmd_digital_out.
+      Adding Function: cmd_digital_out.
+   Adding Class: cmd_digital_in.
+      Adding Function: cmd_digital_in.
+   Adding Class: cmd_analog_out.
+      Adding Function: cmd_analog_out.
+   Adding Class: cmd_analog_in.
+      Adding Function: cmd_analog_in.
+   Adding Class: cmd_dcmotor_setup.
+      Adding Function: cmd_dcmotor_setup.
+   Adding Class: cmd_dcmotor_run.
+      Adding Function: cmd_dcmotor_run.
+   Adding Class: cmd_servo_attach.
+      Adding Function: cmd_servo_attach.
+   Adding Class: cmd_servo_detach.
+      Adding Function: cmd_servo_detach.
+   Adding Class: cmd_servo_move.
+      Adding Function: cmd_servo_move.
+   Adding Class: sleep.
+      Adding Function: sleep.
+   Adding Class: AVRDigitalSetup.
+      Adding Function: AVRDigitalSetup.
+   Adding Class: AVRDigitalOut.
+      Adding Function: AVRDigitalOut.
+   Adding Class: AVRDigitalIn.
+      Adding Function: AVRDigitalIn.
+   Adding Class: AVRADCSetup.
+      Adding Function: AVRADCSetup.
+   Adding Class: AVRReadADC.
+      Adding Function: AVRReadADC.
+   Adding Class: AVRPWMSetup.
+      Adding Function: AVRPWMSetup.
+   Adding Class: AVRPWMSetDuty.
+      Adding Function: AVRPWMSetDuty.
+         ==> Load SCI2C and USER2C Libraries.
+   Function belongs to class: Sqrt.
+   Function belongs to class: OpLogNot.
+   Function belongs to class: Mclose.
+   Function belongs to class: OpStar.
+   Function belongs to class: cmd_analog_in.
+   Function belongs to class: OpMinus.
+   Function belongs to class: Sin.
+   Function belongs to class: Length.
+   Function belongs to class: Mput.
+   Function belongs to class: rand.
+   Function belongs to class: Sqrt.
+   Function belongs to class: cmd_analog_out.
+   Function belongs to class: OpLogNot.
+   Function belongs to class: Uint8.
+   Function belongs to class: bitand.
+   Function belongs to class: Abs.
+   Function belongs to class: bitand.
+   Function belongs to class: Cepstrum.
+   Function belongs to class: FloatComplex.
+   Function belongs to class: bitcmp.
+   Function belongs to class: String.
+   Function belongs to class: Length.
+   Function belongs to class: OpApex.
+   Function belongs to class: Find.
+   Function belongs to class: Sin.
+   Function belongs to class: OpDotStar.
+   Function belongs to class: AVRDigitalIn.
+   Function belongs to class: OpBackSlash.
+   Function belongs to class: Sum.
+   Function belongs to class: Max.
+   Function belongs to class: cmd_servo_attach.
+   Function belongs to class: diag.
+   Function belongs to class: Int8.
+   Function belongs to class: Size.
+   Function belongs to class: Zeros.
+   Function belongs to class: Mopen.
+   Function belongs to class: Meanf.
+   Function belongs to class: Sin.
+   Function belongs to class: IsNan.
+   Function belongs to class: OpDotHat.
+   Function belongs to class: OpIns.
+   Function belongs to class: OpLogEq.
+   Function belongs to class: bitand.
+   Function belongs to class: OpDotHat.
+   Function belongs to class: FFT.
+   Function belongs to class: DoubleComplex.
+   Function belongs to class: Sin.
+   Function belongs to class: Sqrt.
+   Function belongs to class: AVRReadADC.
+   Function belongs to class: Mseek.
+   Function belongs to class: OpLogNot.
+   Function belongs to class: Int16.
+   Function belongs to class: cmd_dcmotor_setup.
+   Function belongs to class: cmd_servo_detach.
+   Function belongs to class: Sin.
+   Function belongs to class: cmd_dcmotor_run.
+   Function belongs to class: Sin.
+   Function belongs to class: Sin.
+   Function belongs to class: Expm.
+   Function belongs to class: OpLogEq.
+   Function belongs to class: Global.
+   Function belongs to class: OpApex.
+   Function belongs to class: OpLogEq.
+   Function belongs to class: OpSlash.
+   Function belongs to class: Atan.
+   Function belongs to class: Sum.
+   Function belongs to class: Sin.
+   Function belongs to class: Lev.
+   Function belongs to class: OpCc.
+   Function belongs to class: OpLogNot.
+   Function belongs to class: Trace.
+   Function belongs to class: Sqrt.
+   Function belongs to class: Sin.
+   Function belongs to class: AVRDigitalSetup.
+   Function belongs to class: OpDotHat.
+   Function belongs to class: AVRPWMSetup.
+   Function belongs to class: Convol.
+   Function belongs to class: Double.
+   Function belongs to class: FFTShift.
+   Function belongs to class: AVRADCSetup.
+   Function belongs to class: Frmag.
+   Function belongs to class: Zeros.
+   Function belongs to class: Sqrt.
+   Function belongs to class: bitset.
+   Function belongs to class: OpDotHat.
+   Function belongs to class: OpLogNot.
+   Function belongs to class: OpDotHat.
+   Function belongs to class: cmd_digital_out.
+   Function belongs to class: IFFT.
+   Function belongs to class: IsEmpty.
+   Function belongs to class: bitget.
+   Function belongs to class: OpRc.
+   Function belongs to class: Return.
+   Function belongs to class: Meanf.
+   Function belongs to class: Abs.
+   Function belongs to class: AVRDigitalOut.
+   Function belongs to class: Disp.
+   Function belongs to class: OpExt.
+   Function belongs to class: Max.
+   Function belongs to class: Sqrt.
+   Function belongs to class: Part.
+   Function belongs to class: StrSubSt.
+   Function belongs to class: Zeros.
+   Function belongs to class: Trace.
+   Function belongs to class: OpColon.
+   Function belongs to class: AVRPWMSetDuty.
+   Function belongs to class: cmd_servo_move.
+   Function belongs to class: Uint16.
+   Function belongs to class: OpDotStar.
+   Function belongs to class: Sin.
+   Function belongs to class: OpEqual.
+   Function belongs to class: Abs.
+   Function belongs to class: Sum.
+   Function belongs to class: OpDotHat.
+   Function belongs to class: Mget.
+   Function belongs to class: Meanf.
+   Function belongs to class: Sin.
+   Function belongs to class: OpLogEq.
+   Function belongs to class: cmd_digital_in.
+   Function belongs to class: Spec.
+   Function belongs to class: Strindex.
+   Function belongs to class: Sin.
+   Function belongs to class: Sum.
+   Function belongs to class: OpPlus.
+   Function belongs to class: OpDotHat.
+   Function belongs to class: Sqrt.
+   Function belongs to class: sleep.
+   Function belongs to class: Sin.
+   Function belongs to class: Sqrt.
+   Function belongs to class: cat.
+   Function belongs to class: Sum.
+   Function belongs to class: Float.
+         ==> Start translation of function "diag_extract_demo"
+         ==> Generate the AST.
+         ==> Generate C code in /home/mushirahmed/scilab_workspace/out_diag_demo/main.c
+         ==> Copying sources
+         ==> Copying headers
+         ==> Copying interfaces
+         ==> Generating Builder /home/mushirahmed/scilab_workspace/out_diag_demo/Makefile
+         ==> Translation Successfully Completed!!!

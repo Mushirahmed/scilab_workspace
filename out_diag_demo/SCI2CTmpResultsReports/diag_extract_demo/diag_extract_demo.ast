@@ -1,0 +1,983 @@
+Program
+Name   : diag_extract_demo
+Outputs: <empty>
+Inputs : <empty>
+Statements 
+    <EOL>
+    <EOL>
+    Comment : //////////////////// ROW IS GREATER THAN COLUMN (R > C) //////////////////////////////////
+    <EOL>
+    <EOL>
+    Comment : a = [0 4 8 ; 1 5 9;2 6 10;3 7 11 ];   // 4 x 3 matrix
+    <EOL>
+    Comment : a = [0 5 10 ;1 6 11; 2 7 12; 3 8 13; 4 9 14];  // 5 x 3 matrix
+    <EOL>
+    Comment : a = [0 5 10 15;1 6 11 16;2 7 12 17;3 8 13 18;4 9 14 19]; // 5 x 4 matrix
+    <EOL>
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              String: " Row > Column Condition"
+        EndFuncall
+      Lhs       : 
+         Variable: ans1
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : uint8
+          #lhs   : 1
+          Rhs    : 
+              Operation
+                 Operands:
+                    Operation
+                       Operands:
+                          Operation
+                             Operands:
+                                Operation
+                                   Operands:
+                                      Operation
+                                         Operands:
+                                            Operation
+                                               Operands:
+                                                  Operation
+                                                     Operands:
+                                                        Operation
+                                                           Operands:
+                                                              Number_x: 0
+                                                              Number_x: 6
+                                                           Operator: rc
+                                                        EndOperation
+                                                        Number_x: 12
+                                                     Operator: rc
+                                                  EndOperation
+                                                  Number_x: 18
+                                               Operator: rc
+                                            EndOperation
+                                            Operation
+                                               Operands:
+                                                  Operation
+                                                     Operands:
+                                                        Operation
+                                                           Operands:
+                                                              Number_x: 1
+                                                              Number_x: 7
+                                                           Operator: rc
+                                                        EndOperation
+                                                        Number_x: 13
+                                                     Operator: rc
+                                                  EndOperation
+                                                  Number_x: 19
+                                               Operator: rc
+                                            EndOperation
+                                         Operator: cc
+                                      EndOperation
+                                      Operation
+                                         Operands:
+                                            Operation
+                                               Operands:
+                                                  Operation
+                                                     Operands:
+                                                        Number_x: 2
+                                                        Number_x: 8
+                                                     Operator: rc
+                                                  EndOperation
+                                                  Number_x: 14
+                                               Operator: rc
+                                            EndOperation
+                                            Number_x: 20
+                                         Operator: rc
+                                      EndOperation
+                                   Operator: cc
+                                EndOperation
+                                Operation
+                                   Operands:
+                                      Operation
+                                         Operands:
+                                            Operation
+                                               Operands:
+                                                  Number_x: 3
+                                                  Number_x: 9
+                                               Operator: rc
+                                            EndOperation
+                                            Number_x: 15
+                                         Operator: rc
+                                      EndOperation
+                                      Number_x: 21
+                                   Operator: rc
+                                EndOperation
+                             Operator: cc
+                          EndOperation
+                          Operation
+                             Operands:
+                                Operation
+                                   Operands:
+                                      Operation
+                                         Operands:
+                                            Number_x: 4
+                                            Number_x: 10
+                                         Operator: rc
+                                      EndOperation
+                                      Number_x: 16
+                                   Operator: rc
+                                EndOperation
+                                Number_x: 22
+                             Operator: rc
+                          EndOperation
+                       Operator: cc
+                    EndOperation
+                    Operation
+                       Operands:
+                          Operation
+                             Operands:
+                                Operation
+                                   Operands:
+                                      Number_x: 5
+                                      Number_x: 11
+                                   Operator: rc
+                                EndOperation
+                                Number_x: 17
+                             Operator: rc
+                          EndOperation
+                          Number_x: 23
+                       Operator: rc
+                    EndOperation
+                 Operator: cc
+              EndOperation
+        EndFuncall
+      Lhs       : 
+         Variable: c
+    EndEqual
+    Comment :  6 x 4 matrix
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              Variable: c
+        EndFuncall
+      Lhs       : 
+         Variable: ans2
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              String: "=====0th position========="
+        EndFuncall
+      Lhs       : 
+         Variable: ans3
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : diag
+          #lhs   : 1
+          Rhs    : 
+              Variable: c
+              Number_x: 0
+        EndFuncall
+      Lhs       : 
+         Variable: b_0
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              Variable: b_0
+        EndFuncall
+      Lhs       : 
+         Variable: ans4
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              String: "=====1th position========="
+        EndFuncall
+      Lhs       : 
+         Variable: ans5
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : diag
+          #lhs   : 1
+          Rhs    : 
+              Variable: c
+              Number_x: 1
+        EndFuncall
+      Lhs       : 
+         Variable: b_1
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              Variable: b_1
+        EndFuncall
+      Lhs       : 
+         Variable: ans6
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              String: "=====2nd position ========="
+        EndFuncall
+      Lhs       : 
+         Variable: ans7
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : diag
+          #lhs   : 1
+          Rhs    : 
+              Variable: c
+              Number_x: 2
+        EndFuncall
+      Lhs       : 
+         Variable: b_2
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              Variable: b_2
+        EndFuncall
+      Lhs       : 
+         Variable: ans8
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              String: "=====3rd position ========="
+        EndFuncall
+      Lhs       : 
+         Variable: ans9
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : diag
+          #lhs   : 1
+          Rhs    : 
+              Variable: c
+              Number_x: 3
+        EndFuncall
+      Lhs       : 
+         Variable: b_3
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              Variable: b_3
+        EndFuncall
+      Lhs       : 
+         Variable: ans10
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              String: "===== -1th position========="
+        EndFuncall
+      Lhs       : 
+         Variable: ans11
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : diag
+          #lhs   : 1
+          Rhs    : 
+              Variable: c
+              Operation
+                 Operands:
+                    Number_x: 1
+                 Operator: -
+              EndOperation
+        EndFuncall
+      Lhs       : 
+         Variable: b_neg1
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              Variable: b_neg1
+        EndFuncall
+      Lhs       : 
+         Variable: ans12
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              String: "===== -2nd position ========="
+        EndFuncall
+      Lhs       : 
+         Variable: ans13
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : diag
+          #lhs   : 1
+          Rhs    : 
+              Variable: c
+              Operation
+                 Operands:
+                    Number_x: 2
+                 Operator: -
+              EndOperation
+        EndFuncall
+      Lhs       : 
+         Variable: b_neg2
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              Variable: b_neg2
+        EndFuncall
+      Lhs       : 
+         Variable: ans14
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              String: "===== -3rd position ========="
+        EndFuncall
+      Lhs       : 
+         Variable: ans15
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : diag
+          #lhs   : 1
+          Rhs    : 
+              Variable: c
+              Operation
+                 Operands:
+                    Number_x: 3
+                 Operator: -
+              EndOperation
+        EndFuncall
+      Lhs       : 
+         Variable: b_neg3
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              Variable: b_neg3
+        EndFuncall
+      Lhs       : 
+         Variable: ans16
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              String: "===== -4th position ========="
+        EndFuncall
+      Lhs       : 
+         Variable: ans17
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : diag
+          #lhs   : 1
+          Rhs    : 
+              Variable: c
+              Operation
+                 Operands:
+                    Number_x: 4
+                 Operator: -
+              EndOperation
+        EndFuncall
+      Lhs       : 
+         Variable: b_neg4
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              Variable: b_neg4
+        EndFuncall
+      Lhs       : 
+         Variable: ans18
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              String: "===== -5th position ========="
+        EndFuncall
+      Lhs       : 
+         Variable: ans19
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : diag
+          #lhs   : 1
+          Rhs    : 
+              Variable: c
+              Operation
+                 Operands:
+                    Number_x: 5
+                 Operator: -
+              EndOperation
+        EndFuncall
+      Lhs       : 
+         Variable: b_neg5
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              Variable: b_neg5
+        EndFuncall
+      Lhs       : 
+         Variable: ans20
+    EndEqual
+    <EOL>
+    <EOL>
+    <EOL>
+    Comment : /////////////////////////////////////////////////////////////////////////////////////////
+    <EOL>
+    <EOL>
+    <EOL>
+    Comment : ///////////////////  ROW IS LESS THAN COLUMN (R< C) /////////////////////////////
+    <EOL>
+    <EOL>
+    Comment :  a = [0 3 6 9; 1 4 7 10;2 5 8 11];    // 3 x 4 matrix
+    <EOL>
+    Comment : a = [0 3 6 9 12; 1 4 7 10 13;2 5 8 11 14]; // 3 x 5 matrix
+    <EOL>
+    Equal
+      Expression: 
+        Operation
+           Operands:
+              Operation
+                 Operands:
+                    Operation
+                       Operands:
+                          Operation
+                             Operands:
+                                Operation
+                                   Operands:
+                                      Operation
+                                         Operands:
+                                            Operation
+                                               Operands:
+                                                  Operation
+                                                     Operands:
+                                                        Number_x: 0
+                                                        Number_x: 4
+                                                     Operator: rc
+                                                  EndOperation
+                                                  Number_x: 8
+                                               Operator: rc
+                                            EndOperation
+                                            Number_x: 12
+                                         Operator: rc
+                                      EndOperation
+                                      Number_x: 16
+                                   Operator: rc
+                                EndOperation
+                                Number_x: 20
+                             Operator: rc
+                          EndOperation
+                          Operation
+                             Operands:
+                                Operation
+                                   Operands:
+                                      Operation
+                                         Operands:
+                                            Operation
+                                               Operands:
+                                                  Operation
+                                                     Operands:
+                                                        Number_x: 1
+                                                        Number_x: 5
+                                                     Operator: rc
+                                                  EndOperation
+                                                  Number_x: 9
+                                               Operator: rc
+                                            EndOperation
+                                            Number_x: 13
+                                         Operator: rc
+                                      EndOperation
+                                      Number_x: 17
+                                   Operator: rc
+                                EndOperation
+                                Number_x: 21
+                             Operator: rc
+                          EndOperation
+                       Operator: cc
+                    EndOperation
+                    Operation
+                       Operands:
+                          Operation
+                             Operands:
+                                Operation
+                                   Operands:
+                                      Operation
+                                         Operands:
+                                            Operation
+                                               Operands:
+                                                  Number_x: 2
+                                                  Number_x: 6
+                                               Operator: rc
+                                            EndOperation
+                                            Number_x: 10
+                                         Operator: rc
+                                      EndOperation
+                                      Number_x: 14
+                                   Operator: rc
+                                EndOperation
+                                Number_x: 18
+                             Operator: rc
+                          EndOperation
+                          Number_x: 22
+                       Operator: rc
+                    EndOperation
+                 Operator: cc
+              EndOperation
+              Operation
+                 Operands:
+                    Operation
+                       Operands:
+                          Operation
+                             Operands:
+                                Operation
+                                   Operands:
+                                      Operation
+                                         Operands:
+                                            Number_x: 3
+                                            Number_x: 7
+                                         Operator: rc
+                                      EndOperation
+                                      Number_x: 11
+                                   Operator: rc
+                                EndOperation
+                                Number_x: 15
+                             Operator: rc
+                          EndOperation
+                          Number_x: 19
+                       Operator: rc
+                    EndOperation
+                    Number_x: 23
+                 Operator: rc
+              EndOperation
+           Operator: cc
+        EndOperation
+      Lhs       : 
+         Variable: a
+    EndEqual
+    Comment :  4 x 6 matrix
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              String: " Row < Column Condition"
+        EndFuncall
+      Lhs       : 
+         Variable: ans21
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              Variable: a
+        EndFuncall
+      Lhs       : 
+         Variable: ans22
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              String: "=====0th position========="
+        EndFuncall
+      Lhs       : 
+         Variable: ans23
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : diag
+          #lhs   : 1
+          Rhs    : 
+              Variable: a
+              Number_x: 0
+        EndFuncall
+      Lhs       : 
+         Variable: d_0
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              Variable: d_0
+        EndFuncall
+      Lhs       : 
+         Variable: ans24
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              String: "=====1th position========="
+        EndFuncall
+      Lhs       : 
+         Variable: ans25
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : diag
+          #lhs   : 1
+          Rhs    : 
+              Variable: a
+              Number_x: 1
+        EndFuncall
+      Lhs       : 
+         Variable: d_1
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              Variable: d_1
+        EndFuncall
+      Lhs       : 
+         Variable: ans26
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              String: "=====2nd position ========="
+        EndFuncall
+      Lhs       : 
+         Variable: ans27
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : diag
+          #lhs   : 1
+          Rhs    : 
+              Variable: a
+              Number_x: 2
+        EndFuncall
+      Lhs       : 
+         Variable: d_2
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              Variable: d_2
+        EndFuncall
+      Lhs       : 
+         Variable: ans28
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              String: "=====3rd position ========="
+        EndFuncall
+      Lhs       : 
+         Variable: ans29
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : diag
+          #lhs   : 1
+          Rhs    : 
+              Variable: a
+              Number_x: 3
+        EndFuncall
+      Lhs       : 
+         Variable: d_3
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              Variable: d_3
+        EndFuncall
+      Lhs       : 
+         Variable: ans30
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              String: "=====4th position ========="
+        EndFuncall
+      Lhs       : 
+         Variable: ans31
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : diag
+          #lhs   : 1
+          Rhs    : 
+              Variable: a
+              Number_x: 4
+        EndFuncall
+      Lhs       : 
+         Variable: d_4
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              Variable: d_4
+        EndFuncall
+      Lhs       : 
+         Variable: ans32
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              String: "=====5th position ========="
+        EndFuncall
+      Lhs       : 
+         Variable: ans33
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : diag
+          #lhs   : 1
+          Rhs    : 
+              Variable: a
+              Number_x: 5
+        EndFuncall
+      Lhs       : 
+         Variable: d_5
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              Variable: d_5
+        EndFuncall
+      Lhs       : 
+         Variable: ans34
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              String: "===== -1th position========="
+        EndFuncall
+      Lhs       : 
+         Variable: ans35
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : diag
+          #lhs   : 1
+          Rhs    : 
+              Variable: a
+              Operation
+                 Operands:
+                    Number_x: 1
+                 Operator: -
+              EndOperation
+        EndFuncall
+      Lhs       : 
+         Variable: d_neg1
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              Variable: d_neg1
+        EndFuncall
+      Lhs       : 
+         Variable: ans36
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              String: "===== -2nd position ========="
+        EndFuncall
+      Lhs       : 
+         Variable: ans37
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : diag
+          #lhs   : 1
+          Rhs    : 
+              Variable: a
+              Operation
+                 Operands:
+                    Number_x: 2
+                 Operator: -
+              EndOperation
+        EndFuncall
+      Lhs       : 
+         Variable: d_neg2
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              Variable: d_neg2
+        EndFuncall
+      Lhs       : 
+         Variable: ans38
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              String: "===== -3rd position ========="
+        EndFuncall
+      Lhs       : 
+         Variable: ans39
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : diag
+          #lhs   : 1
+          Rhs    : 
+              Variable: a
+              Operation
+                 Operands:
+                    Number_x: 3
+                 Operator: -
+              EndOperation
+        EndFuncall
+      Lhs       : 
+         Variable: d_neg3
+    EndEqual
+    <EOL>
+    Equal
+      Expression: 
+        Funcall  : disp
+          #lhs   : 1
+          Rhs    : 
+              Variable: d_neg3
+        EndFuncall
+      Lhs       : 
+         Variable: ans40
+    EndEqual
+    <EOL>
+    <EOL>
+    <EOL>
+    <EOL>
+    <EOL>
+    <EOL>
+    <EOL>
+    <EOL>
+    <EOL>
+    Funcall  : return
+      #lhs   : 0
+      Rhs    : 
+          <empty>
+    EndFuncall
+    <EOL>
+EndProgram
